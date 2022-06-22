@@ -16,12 +16,51 @@ body {
   padding: 0 24px;
 }
 
+input {
+  border: none;
+  border-radius: 16px;
+  font-size: 25px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: white;
   justify-content: space-between;
+  padding: 16px 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  padding: 8px;
+  width: 50%;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: end;
+  min-width: 100px;
+}
+
+.filter {
   padding: 16px 0;
 }
 
