@@ -6,15 +6,12 @@ const CountryList = (props) => {
   return (
     <ul className="country-list">
       {countries.map((region) => {
-        const {
-          id, iso2Code, name, population,
-        } = region;
+        const { id, name, population } = region;
         return (
           <Country
             key={id}
             {...{
               id,
-              iso2Code,
               name,
               population,
             }}
@@ -29,7 +26,6 @@ CountryList.propTypes = {
   countries: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      iso2Code: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       population: PropTypes.arrayOf(Object).isRequired,
     }),
