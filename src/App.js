@@ -1,8 +1,8 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import CountryPage from './pages/CountryPage';
 import HomePage from './pages/HomePage';
+import PopulationPage from './pages/PopulationPage';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/country/:idCountry" element={<CountryPage />} />
+          <Route path="/country/:idCountry" element={<PopulationPage />} />
         </Routes>
       </div>
     </Router>
