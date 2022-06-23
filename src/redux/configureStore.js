@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import Reducer from '.';
+import countriesReducer from './countries/countries';
 
 const middleware = [thunk];
 if (process.env.NODE_ENV !== 'production') {
@@ -11,9 +11,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 const store = configureStore({
   reducer: {
-    xxx: Reducer,
+    countries: countriesReducer,
   },
-  middleware: [thunk, logger],
+  middleware,
 });
 
 export default store;
