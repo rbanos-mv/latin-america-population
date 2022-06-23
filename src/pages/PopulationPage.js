@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { FLAGS_URL } from '../modules/environment';
-// import Country from '../components/Country';
 import PopulationList from '../components/PopulationList';
+import { FLAGS_URL } from '../modules/environment';
 import { getPopulation } from '../redux/countries/countries';
 
 const PopulationPage = () => {
@@ -38,9 +37,7 @@ const PopulationPage = () => {
           <img src={`${FLAGS_URL}/${country.id.toLowerCase()}.svg`} alt="Flag" />
           <h2>{country.name}</h2>
         </div>
-        {/* <div className="column flag"> */}
         <PopulationList population={country.population} />
-        {/* </div> */}
       </div>
     )
   );

@@ -14,7 +14,6 @@ const mapCountries = (country) => {
 
 export const getCountries = (region) => async (dispatch) => {
   const data = await apiGetCountries(region);
-  // const header = data[0];
   const filtered = data[1].filter((region) => region.id !== '');
   const countries = filtered.map((country) => mapCountries(country));
   dispatch({ type: GET, countries });
@@ -27,7 +26,6 @@ const mapPopulation = (population) => {
 
 export const getPopulation = (idCountry) => async (dispatch) => {
   const data = await apiGetPopulation(idCountry);
-  // const header = data[0];
   const filtered = data[1].filter((population) => population.value);
   const population = filtered.map((population) => mapPopulation(population));
   if (population.length) {

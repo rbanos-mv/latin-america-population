@@ -51,16 +51,6 @@ ul {
   padding: 0;
 }
 
-/* .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  padding: 8px;
-  width: 50%;
-} */
-
 .column {
   display: flex;
   flex-direction: column;
@@ -86,8 +76,6 @@ ul {
 
 .half {
   padding: 24px;
-
-  /* width: 100%; */
 }
 
 .filter {
@@ -128,29 +116,10 @@ ul {
   width: 100%;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .row-wrap {
   display: grid;
   overflow: hidden;
   grid-template-columns: repeat(2, 1fr);
-
-  /* grid-auto-rows: 1fr; */
-
-  /* grid-column-gap: 5px; */
-
-  /* grid-row-gap: 100px; */
-
-  /* max-width: 500px; */
-
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap; */
 }
 
 .year {
