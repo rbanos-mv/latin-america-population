@@ -12,4 +12,16 @@ const apiGetCountries = (region) => fetch(`${API_URL}/country?format=json&region
     throw error;
   });
 
-export default apiGetCountries;
+const apiGetPopulation = (country) => fetch(`${API_URL}/country/${country}/indicator/SP.POP.TOTL?format=json`)
+  .then((response) => {
+    const responseLength = Number(response.headers.get('content-length'));
+    if (responseLength > 0) {
+      return response.json();
+    }
+    return [];
+  })
+  .catch((error) => {
+    throw error;
+  });
+
+export { apiGetCountries, apiGetPopulation };

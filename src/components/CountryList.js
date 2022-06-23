@@ -4,21 +4,23 @@ import Country from './Country';
 const CountryList = (props) => {
   const { countries } = props;
   return (
-    <ul className="country-list">
-      {countries.map((region) => {
-        const { id, name, population } = region;
-        return (
-          <Country
-            key={id}
-            {...{
-              id,
-              name,
-              population,
-            }}
-          />
-        );
-      })}
-    </ul>
+    <div className="column">
+      <ul className="row-wrap">
+        {countries.map((country) => {
+          const { id, name, population } = country;
+          return (
+            <Country
+              key={id}
+              {...{
+                id,
+                name,
+                population,
+              }}
+            />
+          );
+        })}
+      </ul>
+    </div>
   );
 };
 

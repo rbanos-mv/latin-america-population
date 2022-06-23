@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="row">
+        <div className="d-flex flex-row">
           <Link to="/">
             <IoIosArrowBack className="icon" />
           </Link>
