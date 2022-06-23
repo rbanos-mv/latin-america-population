@@ -6,13 +6,21 @@ const Country = (props) => {
   const { id, name, population } = props;
   const flagUrl = `${FLAGS_URL}/${id.toLowerCase()}.svg`;
 
+  const numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
   return (
-    <li key={id} className="card">
-      <NavLink to={`/country/${id}`} className="country">
-        <img src={flagUrl} alt="flag" className="flag" width="100" />
-        <div className="country-name">
-          <p>{name}</p>
-          <p>{population.length ? population[0] : '0'}</p>
+    <li key={id} className="half">
+      <NavLink to={`/country/${id}`} className="card country">
+        <div className="flag">
+          <img src={flagUrl} alt="flag" />
+          <div className="column country-name">
+            <h3>{name}</h3>
+            <h3>
+              {population.length
+                ? `[${population[0].date}] ${numberWithCommas(population[0].value)}`
+                : '0'}
+            </h3>
+          </div>
         </div>
       </NavLink>
     </li>
