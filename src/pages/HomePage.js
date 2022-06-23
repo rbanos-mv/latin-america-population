@@ -1,18 +1,14 @@
+import { useState } from 'react';
 import { shallowEqual, useSelector } from 'react-redux';
 import CountryList from '../components/CountryList';
 
 const HomePage = () => {
+  const [filter, setFilter] = useState('');
   const countryList = useSelector((state) => state.countries, shallowEqual);
-  let filtered = countryList;
 
-  const onChange = (event) => {
-    const text = (event.target.value || '').trim();
-    console.log(text);
-    if (text) {
-      filtered = countryList.filter((country) => country.name.toLowerCase().includes(text));
-      console.log(filtered);
-    }
-  };
+  const onChange = (event) => setFilter((event.target.value || '').trim().toLowerCase());
+
+  const filtered = countryList.filter((country) => country.name.toLowerCase().includes(filter));
 
   return (
     <div>
