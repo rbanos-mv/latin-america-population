@@ -1,0 +1,224 @@
+@import url('bootstrap/dist/css/bootstrap.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.cdnfonts.com/css/gill-sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #436ab1;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+nav a,
+nav a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Gill Sans', sans-serif;
+}
+
+header {
+  background-color: #4369b1;
+  padding: 0 16px;
+}
+
+img {
+  margin-bottom: 24px;
+  width: 75%;
+}
+
+input {
+  background-color: #35548b;
+  border: none;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+input:focus {
+  border: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  min-width: 100px;
+  text-align: end;
+}
+
+.country-name {
+  align-items: flex-end;
+  color: white;
+  max-width: 600px;
+  width: 75%;
+}
+
+.country-name h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.half {
+  padding: 24px;
+}
+
+.filter {
+  background-color: #35548b;
+  color: white;
+  font-size: 24px;
+  padding: 2px 16px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.flag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.icon {
+  color: white;
+  height: 36px;
+  width: 36px;
+}
+
+.latin-america,
+.population-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #5386e1;
+  text-transform: uppercase;
+  padding: 0 5%;
+  width: 100%;
+}
+
+.head,
+.head-center,
+.head-left,
+.head-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding: 8px 16px;
+  width: 50%;
+}
+
+.head-center {
+  justify-content: center;
+  width: 100%;
+}
+
+.head-left {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.head-right {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.population {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 16px 5%;
+  width: 100%;
+}
+
+.population-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.row-wrap li {
+  background-color: #4167ae;
+  padding: 8px 16px;
+}
+
+.population-list li {
+  background-color: #4167ae;
+}
+
+.population-list li:nth-child(even) {
+  background-color: #3f62a4;
+}
+
+.row-wrap li:nth-child(4n+2),
+.row-wrap li:nth-child(4n+3) {
+  background-color: #3f62a4;
+}
+
+.row-wrap {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.to-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.year {
+  font-size: 25px;
+}
