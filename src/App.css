@@ -193,16 +193,16 @@ ul {
   padding: 8px 16px;
 }
 
-.row-wrap li:nth-child(4n+2),
-.row-wrap li:nth-child(4n+3) {
-  background-color: #3f62a4;
-}
-
 .population-list li {
   background-color: #4167ae;
 }
 
 .population-list li:nth-child(even) {
+  background-color: #3f62a4;
+}
+
+.row-wrap li:nth-child(4n+2),
+.row-wrap li:nth-child(4n+3) {
   background-color: #3f62a4;
 }
 
