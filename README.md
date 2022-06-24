@@ -1,8 +1,22 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Latin America Population
 
-> Description the project.
+> Latin America Population is a single page application created with React and Redux that allow users to review Latin America countries population. This webapp uses the World Bank indicators API.
+>
+> **Home page**:
+> It shows the list of Latin America and the Caribbean countries. The list includes de Flag, the name and the last known population. Initially, the population is shown as zero, since the API endpoint for the list of countries does not include such value.
+>
+> When you click anywhere on the country area, it will send you to the Population page. When you come back from the Population page, the country population is updated.
+>
+> You can filter the list of countries by typing partially the name of the one you are interested.
+>
+> **Population page**:
+> The population page, shows the country flag and the name of the country in the top.
+>
+> Next comes a list of years and the country's population for that year.
+>
+> To go back to the Home Page, you may tap in the Back button (<).
 
 ## Built With
 
@@ -14,6 +28,7 @@
 ## Live Demo
 
 [GitHub Live Demo Link](https://rbanos-mv.github.io/capstone-3-metrics/)
+[Video Presentation](https://www.loom.com/share/8c5c22a9ba634e5b91f59af52e6fe79d)
 
 ### Getting Started
 
@@ -101,6 +116,10 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/) for the motivation.
+- API by [Word Bank](https://datahelpdesk.worldbank.org/knowledgebase/articles/898590-country-api-queries)
+- Country Flags by [flagcdn.com](https://flagcdn.com/)
+- [Latin America map](https://upload.wikimedia.org/wikipedia/commons/6/63/Latin_America_%28orthographic_projection%29.svg) by [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
+- [Original design idea](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>) by [Nelson Sakwa in Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 
