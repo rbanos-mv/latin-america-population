@@ -1,5 +1,6 @@
 @import url('bootstrap/dist/css/bootstrap.css');
 @import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
 
 * {
   box-sizing: border-box;
@@ -12,6 +13,14 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
 nav a,
 nav a:hover {
   color: white;
@@ -19,9 +28,12 @@ nav a:hover {
 }
 
 body {
-  background-color: #436ab1;
-  font-family: 'Lato', sans-serif;
-  padding: 0 24px;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+header {
+  background-color: #4369b1;
+  padding: 0 16px;
 }
 
 img {
@@ -30,11 +42,20 @@ img {
 }
 
 input {
+  background-color: #35548b;
   border: none;
-  border-radius: 16px;
+  color: white;
   font-size: 25px;
-  padding: 8px 16px;
+  text-transform: uppercase;
   width: 100%;
+}
+
+input:focus {
+  border: none;
+}
+
+input::placeholder {
+  color: white;
 }
 
 nav {
@@ -64,14 +85,20 @@ ul {
   justify-content: space-between;
   height: 100%;
   min-width: 100px;
-  padding: 24px;
   text-align: end;
 }
 
 .country-name {
   align-items: flex-end;
+  color: white;
   max-width: 600px;
   width: 75%;
+}
+
+.country-name h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .half {
@@ -79,7 +106,12 @@ ul {
 }
 
 .filter {
-  padding: 16px 0;
+  background-color: #35548b;
+  color: white;
+  font-size: 24px;
+  padding: 2px 16px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .flag {
@@ -88,7 +120,6 @@ ul {
   align-items: center;
   margin-bottom: 16px;
   max-width: 600px;
-  padding: 24px;
 }
 
 .heading {
@@ -96,8 +127,47 @@ ul {
 }
 
 .icon {
+  color: white;
   height: 36px;
   width: 36px;
+}
+
+.latin-america,
+.population-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #5386e1;
+  text-transform: uppercase;
+  padding: 0 5%;
+  width: 100%;
+}
+
+.head,
+.head-center,
+.head-left,
+.head-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding: 8px 16px;
+  width: 50%;
+}
+
+.head-center {
+  justify-content: center;
+  width: 100%;
+}
+
+.head-left {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.head-right {
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .population {
@@ -105,21 +175,48 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  margin: 12px 0;
-  padding: 8px;
+  color: white;
+  padding: 16px 5%;
   width: 100%;
 }
 
 .population-list {
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+}
+
+.row-wrap li {
+  background-color: #4167ae;
+  padding: 8px 16px;
+}
+
+.row-wrap li:nth-child(4n+2),
+.row-wrap li:nth-child(4n+3) {
+  background-color: #3f62a4;
+}
+
+.population-list li {
+  background-color: #4167ae;
+}
+
+.population-list li:nth-child(even) {
+  background-color: #3f62a4;
 }
 
 .row-wrap {
   display: grid;
   overflow: hidden;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.to-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .year {

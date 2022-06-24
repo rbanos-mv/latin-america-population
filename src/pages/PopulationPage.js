@@ -33,10 +33,15 @@ const PopulationPage = () => {
   return (
     country && (
       <div className="column">
-        <div className="card flag">
-          <img src={`${FLAGS_URL}/${country.id.toLowerCase()}.svg`} alt="Flag" />
-          <h2>{country.name}</h2>
+        <div className="population-head">
+          <div className="head-center">
+            <img src={`${FLAGS_URL}/${country.id.toLowerCase()}.svg`} alt="Flag" />
+          </div>
+          <div className="head-right">
+            <h2>{country.name}</h2>
+          </div>
         </div>
+        <div className="filter">Population by year</div>
         <PopulationList population={country.population} />
       </div>
     )
