@@ -5,10 +5,6 @@ const PopulationList = (props) => {
   const { population } = props;
   return (
     <ul className="population-list">
-      <li className="card population">
-        <h2 className="heading">year</h2>
-        <h2 className="heading">population</h2>
-      </li>
       {population.map((item) => {
         const { date, value } = item;
         return (

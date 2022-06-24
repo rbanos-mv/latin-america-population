@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { HiOutlineArrowCircleRight } from 'react-icons/hi';
 import { NavLink } from 'react-router-dom';
 import { FLAGS_URL } from '../modules/environment';
 
@@ -9,17 +10,20 @@ const Country = (props) => {
   const numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
   return (
-    <li key={id} className="half">
-      <NavLink to={`/country/${id}`} className="card country">
+    <li key={id}>
+      <NavLink to={`/country/${id}`} className="country">
         <div className="flag">
+          <div className="to-end">
+            <HiOutlineArrowCircleRight className="icon" />
+          </div>
           <img src={flagUrl} alt="flag" />
           <div className="column country-name">
             <h3>{name}</h3>
-            <h3>
+            <h4>
               {population.length
                 ? `[${population[0].date}] ${numberWithCommas(population[0].value)}`
                 : '0'}
-            </h3>
+            </h4>
           </div>
         </div>
       </NavLink>
