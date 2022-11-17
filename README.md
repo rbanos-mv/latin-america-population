@@ -27,8 +27,8 @@
 
 ## Live Demo
 
-[GitHub Live Demo Link](https://rbanos-mv.github.io/capstone-3-metrics/)
-[Video Presentation](https://www.loom.com/share/8c5c22a9ba634e5b91f59af52e6fe79d)
+- [GitHub Live Demo Link](https://rbanos-mv.github.io/latin-america-population/)
+- [Video Presentation](https://www.loom.com/share/8c5c22a9ba634e5b91f59af52e6fe79d)
 
 ### Getting Started
 
@@ -43,8 +43,8 @@ Open your terminal and navigate to the folder you would like to save the project
 Type these commands into the terminal:
 
 ```
-git clone https://github.com/rbanos-mv/capstone-3-metrics.git
-cd capstone-3-metrics
+git clone https://github.com/rbanos-mv/latin-america-population.git
+cd latin-america-population
 ```
 
 You will need a `.env` file before you install and run the project. The `.env` file contains environment variables needed to deploy the webpage. There is a commented `.env.example` file you can use as a guide to configure your own. Type the following command into the terminal (or Git Bash, if using Windows) to create your `.env` file:
