@@ -18,6 +18,8 @@
 >
 > To go back to the Home Page, you may tap in the Back button (<).
 
+![image](https://raw.githubusercontent.com/rbanos-mv/latin-america-population/dev/public/Homepage1.webp)
+
 ## Built With
 
 - JavaScript-ES6
